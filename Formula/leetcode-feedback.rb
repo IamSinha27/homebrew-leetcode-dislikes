@@ -1,4 +1,4 @@
-class LeetcodeFeedback < Formula
+class LeetcodeDislikes < Formula
   desc "A script to fetch the likes, dislikes, and dislike percentage of a LeetCode problem"
   homepage "https://github.com/IamSinha27/homebrew-leetcode-dislikes"
   url "https://github.com/yourusername/homebrew-leetcode-dislikes/archive/v1.0.tar.gz"
