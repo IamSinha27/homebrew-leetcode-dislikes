@@ -52,7 +52,7 @@ fi
 # Check if the likes or dislikes count was found 
 if [ "$LIKES" == "null" ] || [ "$DISLIKES" == "null" ]; then
   # If likes or dislikes is null, it likely means the title slug is incorrect or not found
-  echo "No likes or dislikes found for the problem '$TITLE_SLUG'. Check if the problem syntax is correct.Example- leetcode-dislikes two-sum."
+  echo "No likes or dislikes found for the problem '$TITLE_SLUG'. Check if the problem syntax is correct. Example: 'leetcode-dislikes two-sum'."
 else
   # Otherwise, print the number of likes and dislikes, and the dislike percentage
   echo "Dislikes for '$TITLE_SLUG': $DISLIKES"
