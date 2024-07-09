@@ -1,5 +1,13 @@
 #!/bin/bash
 
+#checking version number
+VERSION="1.2"
+
+if [ "$1" == "--version" ]; then
+  echo "leetcode-dislikes version $VERSION"
+  exit 0
+fi
+
 # Check if a title slug is provided as an argument ($1 is the first argument passed to the script)
 if [ -z "$1" ]; then
   # If no argument is provided, print usage information and exit with status code 1
