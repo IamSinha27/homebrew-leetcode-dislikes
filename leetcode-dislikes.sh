@@ -3,7 +3,7 @@
 # Check if a title slug is provided as an argument ($1 is the first argument passed to the script)
 if [ -z "$1" ]; then
   # If no argument is provided, print usage information and exit with status code 1
-  echo "Incorrect question name syntax. Make sure the question name is smallcase and if there is space in the question name, replace it with '-'. Example: leetcode-dislikes two-sum."
+  echo "Incorrect syntax: Example- leetcode-dislikes two-sum."
   exit 1
 fi
 
@@ -52,7 +52,7 @@ fi
 # Check if the likes or dislikes count was found 
 if [ "$LIKES" == "null" ] || [ "$DISLIKES" == "null" ]; then
   # If likes or dislikes is null, it likely means the title slug is incorrect or not found
-  echo "No likes or dislikes found for the problem '$TITLE_SLUG'. Check if the problem title slug is correct."
+  echo "No likes or dislikes found for the problem '$TITLE_SLUG'. Check if the problem syntax is correct.Example- leetcode-dislikes two-sum."
 else
   # Otherwise, print the number of likes and dislikes, and the dislike percentage
   echo "Dislikes for '$TITLE_SLUG': $DISLIKES"
