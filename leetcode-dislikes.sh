@@ -3,7 +3,7 @@
 # Check if a title slug is provided as an argument ($1 is the first argument passed to the script)
 if [ -z "$1" ]; then
   # If no argument is provided, print usage information and exit with status code 1
-  echo "Usage: $0 <title-slug>"
+  echo "Incorrect question name syntax. Make sure the question name is smallcase and if there is space in the question name, replace it with '-'. Example: leetcode-dislikes two-sum."
   exit 1
 fi
 
